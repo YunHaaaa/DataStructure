@@ -212,7 +212,7 @@ int main() {
 	
 	insertBST(T, 100); inorderBST(T)
 	insertBST(T, 999); inorderBST(T);
-	// »èÁ¦ 1
+	// Â»Ã¨ÃÂ¦ 1
 	deleteBST(T, 25); inorderBST(T);
 	deleteBST(T, 500); inorderBST(T);
 	
