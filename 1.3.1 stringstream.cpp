@@ -4,7 +4,7 @@
 #include<sstream>
 
 /*
-* istringstream·Î ¹®ÀÚ¿­ formatÀ» ºĞÇØ ÇÏ±â
+* istringstreamë¡œ ë¬¸ìì—´ formatì„ ë¶„í•´ í•˜ê¸°
 int main() {
         std::istringstream iss("test 123 123hah ahha");
         std::string str, str1, str2;
@@ -21,7 +21,7 @@ int main() {
 */
 
 /*
-* ostringstream·Î ¹®ÀÚ¿­ formatÀ¸·Î ¹®ÀÚ¿­ »ı¼ºÇÏ¿© ÀúÀå
+* ostringstreamë¡œ ë¬¸ìì—´ formatìœ¼ë¡œ ë¬¸ìì—´ ìƒì„±í•˜ì—¬ ì €ì¥
 int main() {
     std::ostringstream oss;
     int inta = 10;
@@ -32,19 +32,19 @@ int main() {
 */
 
 /*
-* stringstream·Î ¹®ÀÚ¿­ ÀúÀå ÈÄ parsing ÇÏ±â
+* stringstreamë¡œ ë¬¸ìì—´ ì €ì¥ í›„ parsing í•˜ê¸°
 int main() {
-    // stringstream¿¡ ¹®ÀÚ¿­ ³Ö´Â ¹æ¹ı 1 (¹®ÀÚ¿­·Î ÀÔ·Â)
+    // stringstreamì— ë¬¸ìì—´ ë„£ëŠ” ë°©ë²• 1 (ë¬¸ìì—´ë¡œ ì…ë ¥)
     std::stringstream ss1("test 1 2 3 4 5");
     std::string str;
 
-    // while(ss1 >> str)ÀÌ¶õ, ´õ ÀÌ»ó strÀÇ ÀÚ·áÇü¿¡ ¸Â´Â Á¤º¸°¡ ¾øÀ» ¶§±îÁö
-    // °è¼Ó ½ºÆ®¸²¿¡¼­ strÀ¸·Î ÀÚ·á¸¦ ÃßÃâ/º¹»çÇÏ´Â °ÍÀÌ´Ù. ³¡¿¡ µµ´ŞÇÏ¸é ³¡³­´Ù.
+    // while(ss1 >> str)ì´ë€, ë” ì´ìƒ strì˜ ìë£Œí˜•ì— ë§ëŠ” ì •ë³´ê°€ ì—†ì„ ë•Œê¹Œì§€
+    // ê³„ì† ìŠ¤íŠ¸ë¦¼ì—ì„œ strìœ¼ë¡œ ìë£Œë¥¼ ì¶”ì¶œ/ë³µì‚¬í•˜ëŠ” ê²ƒì´ë‹¤. ëì— ë„ë‹¬í•˜ë©´ ëë‚œë‹¤.
     while (ss1 >> str) {
         std::cout << str << std::endl;
     }
 
-    // stringstream¿¡ ¹®ÀÚ¿­ ³Ö´Â ¹æ¹ı 2 (¹®ÀÚ¿­ format »ç¿ëÇÏ¿© ÀÔ·Â)
+    // stringstreamì— ë¬¸ìì—´ ë„£ëŠ” ë°©ë²• 2 (ë¬¸ìì—´ format ì‚¬ìš©í•˜ì—¬ ì…ë ¥)
     std::stringstream ss2;
     ss2 << "1" << ' ' << -1 << ' ' << 2 << 3;
 
